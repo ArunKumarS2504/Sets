@@ -21,13 +21,23 @@ public class LinkedList {
 	
 	public void insertatfirst(int val){
 		Node newNode = new Node(val);
-		
+		//when list is empty
 		if(head==null) {
 			head=newNode;
-		}else {
+		}else {//list is not empty
 			newNode.next=head;
 			head=newNode;
 		}
+	}
+
+	public void display(){
+		Node temp=head;
+		while(temp !=null) {
+			System.out.print(temp.data+" ");
+			temp=temp.next;
+		}
+		
+		
 	}
 
 }

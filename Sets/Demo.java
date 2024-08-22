@@ -6,7 +6,9 @@ public class Demo {
 		LinkedList list = new LinkedList();
 		
 		list.insertatfirst(9);
-		System.out.println(list);
+		list.insertatfirst(5);
+		list.display();
+//		System.out.println(list);
 	}
 
 }
