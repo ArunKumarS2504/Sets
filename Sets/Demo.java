@@ -11,6 +11,7 @@ public class Demo {
 		System.out.println();
 		
 		list.insertatPos(1, 10);
+		list.insertatPos(0, 2);
 		list.display();
 	}
 

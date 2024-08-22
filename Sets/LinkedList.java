@@ -39,9 +39,13 @@ public class LinkedList {
 	}
 	
 	public void insertatPos(int pos, int val){
+		if(pos==0) {
+			insertatfirst(val);
+			return;
+		}
 		Node newNode = new Node(val);
 		Node temp = head;
-		for(int i=1;i<pos;i++) {
+		for(int i=1;i<pos;i++) {//jump to prev node
 			temp=temp.next;
 		}
 		newNode.next = temp.next;// store the ref first and insert next
