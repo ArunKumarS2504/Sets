@@ -8,7 +8,10 @@ public class Demo {
 		list.insertatfirst(9);
 		list.insertatfirst(5);
 		list.display();
-//		System.out.println(list);
+		System.out.println();
+		
+		list.insertatPos(1, 10);
+		list.display();
 	}
 
 }

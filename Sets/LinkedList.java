@@ -35,8 +35,17 @@ public class LinkedList {
 		while(temp !=null) {
 			System.out.print(temp.data+" ");
 			temp=temp.next;
+		}	
+	}
+	
+	public void insertatPos(int pos, int val){
+		Node newNode = new Node(val);
+		Node temp = head;
+		for(int i=1;i<pos;i++) {
+			temp=temp.next;
 		}
-		
+		newNode.next = temp.next;// store the ref first and insert next
+		temp.next = newNode;
 		
 	}
 
