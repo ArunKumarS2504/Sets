@@ -64,6 +64,27 @@ public class LinkedList {
 			}
 			head = head.next;
 		}
+		// Delete at a specific position
+		public void deleteAtPos(int pos) {
+			if (head == null) {
+				System.out.println("List is empty");
+				return;
+			}
+			if (pos == 0) {
+				deleteFirst();
+				return;
+			}
+			Node temp = head;
+			for (int i = 1; i < pos; i++) {
+				if (temp.next == null) {
+					throw new IllegalArgumentException("Invalid position " + pos);
+				}
+				temp = temp.next;
+			}
+			if (temp.next == null) {
+				throw new IllegalArgumentException("Invalid position " + pos);
+			}
+			temp.next = temp.next.next;
+		}
 		
-
 }
