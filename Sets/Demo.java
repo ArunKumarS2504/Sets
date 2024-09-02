@@ -13,6 +13,7 @@ public class Demo {
 		list.insertatPos(1, 10);
 		list.insertatPos(0, 2);
 		list.display();
+		list.deleteFirst();
 	}
 
 }

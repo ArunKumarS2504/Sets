@@ -47,10 +47,23 @@ public class LinkedList {
 		Node temp = head;
 		for(int i=1;i<pos;i++) {//jump to prev node
 			temp=temp.next;
+			if(temp==null) {
+//				System.out.println("invalid position");
+				throw new IllegalArgumentException("Invalid position"+pos);
+			}
 		}
 		newNode.next = temp.next;// store the ref first and insert next
 		temp.next = newNode;
 		
 	}
+	// Delete the first node
+		public void deleteFirst() {
+			if (head == null) {
+				System.out.println("List is empty");
+				return;
+			}
+			head = head.next;
+		}
+		
 
 }
