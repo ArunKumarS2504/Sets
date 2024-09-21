@@ -9,7 +9,7 @@ Node head; // head of the list
         int data;
         Node next;
         Node prev; // Reference to the previous node
-        
+   
         Node(int val) {
             data = val;
             next = null;
