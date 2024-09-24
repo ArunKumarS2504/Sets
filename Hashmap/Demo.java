@@ -5,15 +5,6 @@ import java.util.*;
 
 public class Demo {
 
-
-//Java program to Demonstrate
-//HashMap(int initialCapacity,float loadFactor) Constructor
-
-
-
-
-
- // Main driver method
  public static void main(String args[])
  {
      // No need to mention the generic type twice
@@ -23,6 +14,15 @@ public class Demo {
      // Initialization of a HashMap using Generics
      HashMap<Integer, String> hm2
          = new HashMap<Integer, String>(3, 0.5f);
+     
+     Map<Integer,Integer> quantity = new HashMap<>();
+     
+     quantity.put(1,2);
+     quantity.put(2, 3);
+     
+     for(int key:quantity.keySet()) {
+    	 System.out.println(key + quantity.get(key));
+     }
 
      // Add Elements using put() method
      // Custom input elements
