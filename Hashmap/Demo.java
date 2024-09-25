@@ -15,13 +15,13 @@ public class Demo {
      HashMap<Integer, String> hm2
          = new HashMap<Integer, String>(3, 0.5f);
      
-     Map<Integer,Integer> quantity = new HashMap<>();
+     Map<Integer,String> quantity = new HashMap<>();
      
-     quantity.put(1,2);
-     quantity.put(2, 3);
+     quantity.put(1,"ok");
+     quantity.put(2, "okok");
      
      for(int key:quantity.keySet()) {
-    	 System.out.println(key + quantity.get(key));
+    	 System.out.println(key +" :"+ quantity.get(key));
      }
 
      // Add Elements using put() method
