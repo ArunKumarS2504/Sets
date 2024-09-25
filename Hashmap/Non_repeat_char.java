@@ -30,12 +30,17 @@ public class Non_repeat_char {
 		
 		String str1 = "leetcode";
 		String str2 = "loveleetcode";
+		String str3 = "aabb";
 		
 		Non_repeat_char NRC = new Non_repeat_char();
 		
 		NRC.findIndex(str1);
 		NRC.findIndex(str2);
 		
+		System.out.println("Index of first non-repeating character in 'leetcode': " + NRC.findIndex(str1)); // Output: 0
+        System.out.println("Index of first non-repeating character in 'loveleetcode': " + NRC.findIndex(str2)); // Output: 2
+        System.out.println("Index of first non-repeating character in 'aabb': " + NRC.findIndex(str3)); // Output: -1
+
 		
 	}
 }
