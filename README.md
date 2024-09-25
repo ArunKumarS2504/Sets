@@ -26,8 +26,7 @@ Example:
 2. Adding Key-Value Pairs
 ```hashMap.put(key, value);```
 Example:
-```ageMap.put("Alice", 30);
-ageMap.put("Bob", 25);```
+```ageMap.put("Alice", 30); ageMap.put("Bob", 25);```
 3. Accessing Values
 ```ValueType value = hashMap.get(key);```
 Example:
