@@ -41,11 +41,10 @@ Example:
 ```ageMap.remove("Bob"); // Removes Bob from the map```
 6. Iterating Through the HashMap
 Using entrySet():
-
 ```for (Map.Entry<KeyType, ValueType> entry : hashMap.entrySet()) {
     System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-}
+}```
 Example:
 ```for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {
     System.out.println("Name: " + entry.getKey() + ", Age: " + entry.getValue());
-}
+}```
