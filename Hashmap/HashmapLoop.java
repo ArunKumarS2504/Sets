@@ -12,6 +12,10 @@ public class HashmapLoop {
 		Items.put(3,"Orange");
 		Items.put(4,"Pine");
 		Items.put(5,"Mango");
+
+		//This means every time you call items.get(key),
+		//the HashMap internally searches for the value associated with that key, which adds some overhead.
+
 		
 		for(Integer Key : Items.keySet()) 
 		{
