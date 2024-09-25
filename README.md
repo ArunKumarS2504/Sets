@@ -11,22 +11,18 @@ Keys: Unique identifiers used to access values.
 Values: Data associated with the keys.
 Buckets: An array of linked lists used to handle collisions.
 
-# How It Works
-Hashing: When a key-value pair is added, the key is hashed to determine its bucket index.
+## How It Works
+**Hashing:** When a key-value pair is added, the key is hashed to determine its bucket index.
 
-Collision Handling: If multiple keys hash to the same bucket, a linked list (or tree, if the list gets too long) is used to store multiple key-value pairs.
+**Collision Handling:** If multiple keys hash to the same bucket, a linked list (or tree, if **the list gets too long) is used to store multiple key-value pairs.
 
-Load Factor: The load factor determines when to resize the HashMap. The default load factor is 0.75, meaning that when 75% of the HashMap is filled, it will resize to double its capacity.
+**Load Factor:** The load factor determines when to resize the HashMap. The default load factor is 0.75, meaning that when 75% of the HashMap is filled, it will resize to double its capacity.
 
 Basic Methods
 1. Declaration and Initialization
-java
-Copy code
-HashMap<KeyType, ValueType> hashMap = new HashMap<>();
+```HashMap<KeyType, ValueType> hashMap = new HashMap<>();```
 Example:
-java
-Copy code
-HashMap<String, Integer> ageMap = new HashMap<>();
+```HashMap<String, Integer> ageMap = new HashMap<>();```
 2. Adding Key-Value Pairs
 java
 Copy code
