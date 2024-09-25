@@ -16,7 +16,12 @@ public class HashmapLoop {
 		for(Integer Key : Items.keySet()) 
 		{
 			String value = Items.get(Key);
-			System.out.println("Key :"+ Key + " Value :"+ value);
+			if(value.length()>5) {
+				System.out.println("Key :"+ Key + " Value :"+ value);
+				
+			}
+			
+			
 		}
 	}
 
