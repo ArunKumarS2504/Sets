@@ -24,57 +24,29 @@ Basic Methods
 Example:
 ```HashMap<String, Integer> ageMap = new HashMap<>();```
 2. Adding Key-Value Pairs
-java
-Copy code
-hashMap.put(key, value);
+```hashMap.put(key, value);```
 Example:
-java
-Copy code
-ageMap.put("Alice", 30);
-ageMap.put("Bob", 25);
+```ageMap.put("Alice", 30);
+ageMap.put("Bob", 25);```
 3. Accessing Values
-java
-Copy code
-ValueType value = hashMap.get(key);
+```ValueType value = hashMap.get(key);```
 Example:
-java
-Copy code
-Integer age = ageMap.get("Alice"); // Returns 30
+```Integer age = ageMap.get("Alice"); // Returns 30```
 4. Checking for Keys
-java
-Copy code
-boolean exists = hashMap.containsKey(key);
+```boolean exists = hashMap.containsKey(key);```
 Example:
-java
-Copy code
-boolean hasAlice = ageMap.containsKey("Alice"); // Returns true
+```boolean hasAlice = ageMap.containsKey("Alice"); // Returns true```
 5. Removing Key-Value Pairs
-java
-Copy code
-hashMap.remove(key);
+```hashMap.remove(key);```
 Example:
-java
-Copy code
-ageMap.remove("Bob"); // Removes Bob from the map
+```ageMap.remove("Bob"); // Removes Bob from the map```
 6. Iterating Through the HashMap
 Using entrySet():
 
-java
-Copy code
-for (Map.Entry<KeyType, ValueType> entry : hashMap.entrySet()) {
+```for (Map.Entry<KeyType, ValueType> entry : hashMap.entrySet()) {
     System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-}
+}```
 Example:
-java
-Copy code
-for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {
+```for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {
     System.out.println("Name: " + entry.getKey() + ", Age: " + entry.getValue());
-}
-7. Checking the Size
-java
-Copy code
-int size = hashMap.size();
-Example:
-java
-Copy code
-int numberOfEntries = ageMap.size(); // Returns the number of key-value pairs
+}```
