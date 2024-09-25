@@ -15,8 +15,6 @@ public class HashmapLoop {
 
 		//This means every time you call items.get(key),
 		//the HashMap internally searches for the value associated with that key, which adds some overhead.
-
-		
 		for(Integer Key : Items.keySet()) 
 		{
 			String value = Items.get(Key);
